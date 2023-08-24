@@ -1,40 +1,59 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    direction: rtl; /* For right-to-left text */
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-align: right;
 }
-
-/* Remove .menu-container, .menu, and related styles */
-/* ... (rest of your CSS) ... */
-
-.navbar {
-    position: fixed;
-    top: 0; /* Change to 0px to move to the top */
-    left: 0;
-    width: 100%; /* Expand the navbar to full width */
-    background-color: #2b2b2b;
-    padding: 10px;
-    text-align: right;
-    z-index: 2; /* Place it above other content */
+a {
+  text-decoration: none;
 }
-
-
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(135, 24, 24, 0.7);
-    display: none;
-    z-index: 1;
+.header {
+  position: fixed;
+  top: 0px;
+  height: 70px;
+  width: 100%;
+  z-index: 100;
+  padding: 0 20px;
+  background-color: #333; /* Adjust the background color as needed */
 }
-
-.overlay.show-overlay {
-    display: block;
+.nav {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
 }
-
+.nav_logo,
+.nav_link,
+.button {
+  color: #fff;
+  font-size: 25px;
+}
+.nav_item {
+  column-gap: 25px;
+  display: flex;
+  align-items: center;
+}
+.nav_link:hover {
+  color: #d9d9d9;
+}
+.button {
+  padding: 6px 24px;
+  border: 2px solid #fff;
+  background: transparent;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.button:active {
+  transform: scale(0.98);
+}
+/* The Home content */
 .content {
-    padding: 20px;
+  margin-top: 100px; /* Adjust the spacing as needed */
+  padding: 20px;
 }
